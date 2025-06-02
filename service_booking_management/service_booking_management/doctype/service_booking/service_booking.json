@@ -50,6 +50,7 @@
    "fieldname": "service_type",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Service Type",
    "options": "Therapy\nSpa\nOthers",
    "reqd": 1
@@ -57,6 +58,7 @@
   {
    "fieldname": "preferred_datetime",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Preferred Date/Time",
    "reqd": 1
   },
@@ -64,6 +66,8 @@
    "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Requested\nApproved\nCompleted"
   }
@@ -72,7 +76,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-02 20:04:23.122632",
+ "modified": "2025-06-02 21:35:04.496709",
  "modified_by": "admin@gmail.com",
  "module": "Service Booking Management",
  "name": "Service Booking",
@@ -94,6 +98,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "search_fields": "service_type, status",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
