@@ -51,7 +51,9 @@ It includes a custom DocType, workflow state management, email notifications, cu
 
 ## Video Demonstration
 
-<iframe src="https://drive.google.com/file/d/126b7mT8MYJk_s4S2PQ81GWzcBz-CYZ1c/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
+[![Service Booking Management Demo](https://drive.google.com/uc?export=view&id=126b7mT8MYJk_s4S2PQ81GWzcBz-CYZ1c)](https://drive.google.com/file/d/126b7mT8MYJk_s4S2PQ81GWzcBz-CYZ1c/view?usp=sharing)
+
+_Click the image above to watch the video demonstration_
 
 ## Contact
 
