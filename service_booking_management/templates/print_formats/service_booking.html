@@ -1,0 +1,113 @@
+<div class="print-format">
+  <!-- Header Section -->
+  <div class="header-section text-center mb-4">
+    <h1>Wellness Center</h1>
+    <h2 class="text-primary">Service Booking Confirmation</h2>
+    <p class="lead">Thank you for choosing our services!</p>
+  </div>
+
+  <!-- Booking Details Section -->
+  <div class="booking-details mt-4">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td class="font-weight-bold" style="width: 30%">
+                Booking Reference
+              </td>
+              <td>{{ doc.name }}</td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Customer Name</td>
+              <td>{{ doc.customer_name }}</td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Service Type</td>
+              <td>{{ doc.service_type }}</td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Preferred Date/Time</td>
+              <td>
+                {{
+                frappe.utils.get_datetime(doc.preferred_datetime).strftime('%d-%m-%Y
+                %I:%M %p') }}
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Status</td>
+              <td>
+                {% if doc.status == "Requested" %}
+                <span class="badge badge-warning">Requested</span>
+                {% elif doc.status == "Approved" %}
+                <span class="badge badge-success">Approved</span>
+                {% elif doc.status == "Completed" %}
+                <span class="badge badge-info">Completed</span>
+                {% endif %}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Information -->
+  <div class="additional-info mt-4">
+    <div>
+      <h5>Important Information:</h5>
+      <ul>
+        <li>Please arrive 15 minutes before your scheduled appointment</li>
+        <li>Bring any necessary identification documents</li>
+        <li>
+          For any changes or cancellations, please contact us at least 24 hours
+          in advance
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer-section mt-5 pt-4 border-top">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="mb-1">Thank you for your business!</p>
+        <p class="mb-1">For any queries, please contact us at:</p>
+        <p class="mb-1">Email: support@example.com | Phone: +1 234 567 890</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .print-format {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .header-section {
+    margin-bottom: 30px;
+  }
+  .table {
+    margin-bottom: 20px;
+  }
+  .table td {
+    padding: 8px;
+  }
+  .badge {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .footer-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  @media print {
+    .print-format {
+      padding: 0;
+    }
+    .no-print {
+      display: none;
+    }
+  }
+</style>

@@ -57,9 +57,11 @@
   {
    "fieldname": "preferred_datetime",
    "fieldtype": "Datetime",
-   "label": "Preferred Date/Time"
+   "label": "Preferred Date/Time",
+   "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -70,7 +72,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-02 00:32:04.515607",
+ "modified": "2025-06-02 20:04:23.122632",
  "modified_by": "admin@gmail.com",
  "module": "Service Booking Management",
  "name": "Service Booking",
