@@ -242,3 +242,27 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "dt": "Role",
+        "filters": [
+            [
+                "role_name",
+                "in",
+                [
+                    "Service Booking Manager",
+                    "Service Booking Requester",
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Workflow",
+    },
+    {
+        "dt": "Workflow State",
+    },
+    {
+        "dt": "Workflow Action Master",
+    },
+]
