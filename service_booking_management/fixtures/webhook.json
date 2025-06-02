@@ -8,7 +8,7 @@
   "enabled": 1,
   "is_dynamic_url": 0,
   "meets_condition": "Yes",
-  "modified": "2025-06-03 00:26:05.324043",
+  "modified": "2025-06-03 00:36:13.821993",
   "name": "Service Booking",
   "preview_document": null,
   "preview_request_body": "Select a document to preview request data",
@@ -28,7 +28,7 @@
     "value": "application/json"
    }
   ],
-  "webhook_json": "{ \"id\": \"{{ doc.name }}\" }",
+  "webhook_json": "{ \n    \"id\": \"{{ doc.name }}\",\n    \"customer_name\": \"{{ doc.customer_name }}\",\n    \"service_type\": \"{{ doc.service_type }}\",\n    \"preferred_datetime\": \"{{ doc.preferred_datetime }}\",\n    \"status\": \"{{ doc.status }}\"\n}",
   "webhook_secret": null
  }
 ]
