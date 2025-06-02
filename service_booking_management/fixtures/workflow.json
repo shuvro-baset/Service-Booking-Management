@@ -4,7 +4,7 @@
   "doctype": "Workflow",
   "document_type": "Service Booking",
   "is_active": 1,
-  "modified": "2025-06-02 22:39:01.764641",
+  "modified": "2025-06-02 22:57:37.209341",
   "name": "Service Booking Approval",
   "override_status": 0,
   "send_email_alert": 0,
@@ -21,8 +21,8 @@
     "parenttype": "Workflow",
     "send_email": 1,
     "state": "Requsted",
-    "update_field": null,
-    "update_value": null,
+    "update_field": "status",
+    "update_value": "Requested",
     "workflow_builder_id": null
    },
    {
@@ -37,8 +37,8 @@
     "parenttype": "Workflow",
     "send_email": 1,
     "state": "Approval Pending",
-    "update_field": null,
-    "update_value": null,
+    "update_field": "status",
+    "update_value": "Requested",
     "workflow_builder_id": null
    },
    {
@@ -53,8 +53,8 @@
     "parenttype": "Workflow",
     "send_email": 1,
     "state": "Approved",
-    "update_field": null,
-    "update_value": null,
+    "update_field": "status",
+    "update_value": "Approved",
     "workflow_builder_id": null
    },
    {
@@ -69,8 +69,8 @@
     "parenttype": "Workflow",
     "send_email": 1,
     "state": "Completed",
-    "update_field": null,
-    "update_value": null,
+    "update_field": "status",
+    "update_value": "Completed",
     "workflow_builder_id": null
    }
   ],
