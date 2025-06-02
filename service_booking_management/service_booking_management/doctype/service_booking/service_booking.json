@@ -69,15 +69,16 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Requested\nApproved\nCompleted"
+   "options": "Requested\nApproved\nCompleted",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-02 21:35:04.496709",
- "modified_by": "admin@gmail.com",
+ "modified": "2025-06-02 23:05:05.205171",
+ "modified_by": "Administrator",
  "module": "Service Booking Management",
  "name": "Service Booking",
  "naming_rule": "Expression",
