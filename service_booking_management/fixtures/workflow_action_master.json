@@ -2,6 +2,13 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
+  "modified": "2025-06-01 23:06:36.548182",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
   "modified": "2025-06-01 23:06:36.547510",
   "name": "Approve",
   "workflow_action_name": "Approve"
@@ -12,13 +19,6 @@
   "modified": "2025-06-01 23:06:36.547869",
   "name": "Reject",
   "workflow_action_name": "Reject"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-06-01 23:06:36.548182",
-  "name": "Review",
-  "workflow_action_name": "Review"
  },
  {
   "docstatus": 0,
